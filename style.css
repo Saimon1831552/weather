@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Open Sans','sans-serif';
+}
+
+body{
+    background: #E3F2FD;
+
+}
+
+h1{
+    color: #fff;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 1.75rem;
+    background: #5372F0;
+}
+
+.container{
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+
+.wether-input{
+    width: 550px;
+    
+}
+
+.wether-input input{
+    width: 100%;
+    height: 46px;
+    outline: none;
+    padding: 0 15px;
+    margin: 10px 0 20px 0;
+    font-size: 1.07rem;
+    border-radius: 4px;
+    border: solid #ccc;
+}
+
+.wether-input .separator{
+    width: 100%;
+    height: 1px;
+    margin: 25px 0;
+    background: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wether-input .separator::before{
+    content: 'OR';
+    color: #6C757D;
+    background: #E3F2FD;
+    font-size: 1.18rem;
+    margin-top: -4px;
+    padding: 0 15px;
+
+}
+
+.wether-input button{
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #5372F0;
+
+}
+.wether-input .location-btn{
+    background: #6C757D;
+}
+
+.weather-data{
+    width: 100%;
+}
+
+.current-weather{
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    background: #5372F0;
+    padding: 20px 70px 20px 20px;
+    justify-content: space-between;
+}
+.current-weather h2{
+    font-size: 1.72rem;
+}
+.weather-data h4{
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.current-weather .icon img{
+    max-width: 120px;
+    margin-top: -15px;
+}
+.current-weather .icon h4{
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+.days-forecast{
+    font-size: 1.15rem;
+    padding: 20px 0;
+}
+.weather-cards{
+    display: flex;
+    gap: 10px;
+}
+.weather-cards .card{
+    list-style: none;
+    color: #fff;
+    background: #6C757D;
+    padding: 18px 16px;
+    border-radius: 30px;
+    width: calc(100%/5);
+}
+.weather-cards .card img{
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
